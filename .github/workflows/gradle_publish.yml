@@ -30,5 +30,5 @@ jobs:
         run: ./gradlew publish --stacktrace
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CIVMC_NEXUS_USER: ${{ secretes.CIVMC_NEXUS_USER }}
+          CIVMC_NEXUS_USER: ${{ secrets.CIVMC_NEXUS_USER }}
           CIVMC_NEXUS_PASSWORD: ${{ secrets.CIVMC_NEXUS_PASSWORD }}
