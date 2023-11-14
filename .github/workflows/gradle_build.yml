@@ -29,6 +29,8 @@ jobs:
 
       - name: Run Gradle Build
         uses: gradle/gradle-build-action@v2
+        env:
+          CI: true
         with:
           arguments: '${{ inputs.gradle_task }} --scan'
 
