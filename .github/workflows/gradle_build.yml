@@ -30,7 +30,7 @@ jobs:
       - name: Run Gradle Build
         uses: gradle/gradle-build-action@v2
         with:
-          arguments: '${{ inputs.gradle_task }}'
+          arguments: '${{ inputs.gradle_task }} --scan'
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v3
