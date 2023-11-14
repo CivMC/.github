@@ -4,15 +4,15 @@ on:
     inputs:
       java_version:
         type: string
-        required: true
+        required: false
         default: '17'
       java_distribution:
         type: string
-        required: true
+        required: false
         default: 'temurin'
       gradle_task:
         type: string
-        required: true
+        required: false
         default: 'build'
 
 jobs:
